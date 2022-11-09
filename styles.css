@@ -6,7 +6,7 @@
   list-style-type: none;
 }
 
-header {
+header .content{
   width: 100%;
   background-color: red;
   height: 70px;
@@ -40,4 +40,12 @@ nav > ul > li > a {
 }
 #mobile {
   display: none;
+}
+@media only screen and (max-width: 895px) {
+  nav li:last-child {
+    display: block;
+  }
+  header .content{
+    padding: 1rem 1rem;
+  }
 }
