@@ -6,6 +6,8 @@
   list-style-type: none;
   text-transform: capitalize;
 }
+body {
+}
 
 header .content {
   width: 100%;
@@ -14,6 +16,19 @@ header .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+nav > ul > li > a {
+  font-size: 20px;
+  display: flex;
+  margin: 0 0.9rem;
 }
 header .image-logo {
   width: 70px;
@@ -26,18 +41,6 @@ header .image-logo {
   margin-block: 0;
   padding-inline-start: 0;
   margin-top: 5px;
-}
-nav ul {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 100%;
-}
-
-nav > ul > li > a {
-  font-size: 20px;
-  display: flex;
-  margin: 0 0.9rem;
 }
 #mobile {
   display: none;
@@ -80,7 +83,6 @@ nav > ul > li > a {
   height: 40vh;
   width: 100vw;
   background-size: cover;
-
 }
 #header h1 {
   top: 9.3rem;
@@ -100,44 +102,42 @@ nav > ul > li > a {
 }
 
 /* header */
-.photo-container {
-  background-color: antiquewhite;
-  width: 1300px;
-  height: 600px;
-  position: relative;
-  left: 12.5%;
-  top: 39%;
-  display: flex;
-  justify-content: center;
-}
-
-.contr {
-  background-color: blueviolet;
-  width: 1200px;
-  height: 500px;
-  top: 8%;
+.img-section {
+  width: 1700px;
+  height: 80vh;
   position: absolute;
-  left: 4%;
-  border-radius: 30px;
+  background-color: black;
   display: flex;
-  justify-content: center;
-}
-
-.tweet{
-  width: 300px;
-  height: 300px;
-  border-radius: 3px solid green;
-  margin: 10px;
-  position: relative;
   left: 10px;
-
+  flex-wrap: wrap;
 }
 
-.tweet img{
+.img-center {
+  width: 400px;
+  height: 300px;
+  margin: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+  margin: 40px;
+  position: relative;
+  left: 7%;
+  object-fit: cover;
+}
+.img-center img {
   max-width: 100%;
   max-height: 100%;
+  border: 3px solid wheat;
 }
-.h2{
-  position: relative;
-
+p {
+  color: #fff;
+  text-align: center;
+}
+.employee {
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  background-color: #f0e8e8;
 }
