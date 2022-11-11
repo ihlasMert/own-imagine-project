@@ -168,8 +168,43 @@ p {
 }
 
 /* product section */
-footer{
+footer {
   width: 100%;
   background-color: blue;
-  height: 10vh;
+  height: 7vh;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+align-items: center;
+
+}
+footer p {
+  color: black;
+  text-align: center;
+  margin-top: 30px;
+  margin: 10px;
+  font-size: 30px;
+}
+footer > p > a {
+  color: black;
+}
+
+@media (max-width: 800px){
+footer{
+font-size: 20px;
+height: 5vh;
+scroll-behavior: smooth;
+display: flex;
+
+}
+footer > p {
+  font-size: 12px;
+  text-align: center;
+}
+footer > p > a {
+  font-size: 12px;
+  text-align: center;
+}
 }
